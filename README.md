@@ -1,0 +1,2 @@
+# BlackCookies
+Small WebExtension Project
