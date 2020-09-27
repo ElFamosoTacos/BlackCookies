@@ -26,7 +26,6 @@
   "incognito": "spanning",
   
   "permissions": [
-	"tabs",
 	"cookies",
 	"*://www.youtube.com/*",
 	"*://www.twitch.tv/*"
