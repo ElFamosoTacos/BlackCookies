@@ -1,0 +1,43 @@
+{
+
+  "manifest_version": 2,
+  "name": "BlackCookies",
+  "version": "1.0",
+  
+  "author": "ElFamosoTacos",
+
+  "description": "Adds cookies used by youtube and twitch to put a black background.",
+  
+  "browser_action": {
+  "browser_style": true,
+  "default_icon": {
+    "16": "icons/16.png",
+    "32": "icons/32.png"
+  },
+  "default_title": "BlackCookies",
+  "default_popup": "index.html"
+},
+  
+  "icons": {
+    "48": "icons/48.png",
+	"96": "icons/96.png"
+  },
+
+  "incognito": "spanning",
+  
+  "permissions": [
+	"tabs",
+	"cookies",
+	"*://www.youtube.com/*",
+	"*://www.twitch.tv/*"
+  ],
+
+  
+  "content_scripts": [
+  {
+	"all_frames": true,
+	"matches": ["https://www.twitch.tv/", "https://www.youtube.com/"],
+	"js": ["mainScript.js"]
+  }
+  ]
+}
