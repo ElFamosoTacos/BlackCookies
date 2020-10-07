@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "BlackCookies",
-  "version": "1.0",
+  "version": "2.0",
   
   "author": "ElFamosoTacos",
 
@@ -35,7 +35,7 @@
   "content_scripts": [
   {
 	"all_frames": true,
-	"matches": ["https://www.twitch.tv/", "https://www.youtube.com/"],
+	"matches": ["https://www.twitch.tv/", "https://www.youtube.com/*"],
 	"js": ["mainScript.js"]
   }
   ]
