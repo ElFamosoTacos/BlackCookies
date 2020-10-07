@@ -4,9 +4,8 @@ if(document.location.href=="https://www.twitch.tv/"){
 			document.location.reload();						// Reload
 	}
 }
-
-if((document.location.href=="https://www.youtube.com/") || (document.location.href=="https://www.youtube.com/?gl=FR&tab=m1")){
-
+else
+{
 	if(localStorage.getItem("ok")!="1"){
 		
 		var listCookies = document.cookie.split(';');				// Get all the cookies
